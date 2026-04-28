@@ -1,0 +1,69 @@
+import { useEffect, useState } from "react";
+import { Moon, Sun, Command } from "lucide-react";
+import { useTheme } from "./theme-provider";
+import { Button } from "./ui/button";
+import { cn } from "@/lib/utils";
+
+const navItems = [
+  { href: "#about", label: "About" },
+  { href: "#skills", label: "Skills" },
+  { href: "#experience", label: "Experience" },
+  { href: "#projects", label: "Projects" },
+  { href: "#contact", label: "Contact" },
+];
+
+export const Navbar = ({ onOpenPalette }: { onOpenPalette: () => void }) => {
+  const { theme, toggleTheme } = useTheme();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  return (
+    <header
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        scrolled ? "glass shadow-elegant" : "bg-transparent"
+      )}
+    >
+      <nav className="container flex h-16 items-center justify-between">
+        <a href="#" className="flex items-center gap-2 font-bold text-lg tracking-tight">
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-accent text-accent-foreground font-mono">
+            AC
+          </span>
+          <span className="hidden sm:inline">Alex Chen</span>
+        </a>
+
+        <div className="hidden md:flex items-center gap-1">
+          {navItems.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="px-3 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              {item.label}
+            </a>
+          ))}
+        </div>
+
+        <div className="flex items-center gap-2">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={onOpenPalette}
+            className="hidden sm:flex gap-2 text-muted-foreground font-mono text-xs"
+          >
+            <Command className="h-3 w-3" />
+            <span>K</span>
+          </Button>
+          <Button variant="ghost" size="icon" onClick={toggleTheme} aria-label="Toggle theme">
+            {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+          </Button>
+        </div>
+      </nav>
+    </header>
+  );
+};
