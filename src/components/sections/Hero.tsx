@@ -5,7 +5,7 @@ import { generateResumePDF } from "@/lib/resume";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-[calc(100vh-4rem)] flex items-center pt-12 overflow-hidden">
+    <section className="relative min-h-[calc(100vh-4rem)] flex items-start pt-8 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-hero pointer-events-none" />
       <div className="absolute inset-0 bg-grid opacity-30 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_70%)] pointer-events-none" />
 
@@ -26,12 +26,8 @@ export const Hero = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-4 leading-relaxed">
-            I'm <span className="text-foreground font-medium">Md Fazle Rabbi</span>, a Senior Mobile & Backend Engineer with 6+ years shipping production Android (Kotlin/Compose), iOS (Swift/SwiftUI), Flutter(dart) and Ktor services powering apps used by millions.
+            I'm <span className="text-foreground font-medium">Md Fazle Rabbi</span>, Senior Mobile Software Engineer specializing in cross-platform systems, native Android, and Ktor-driven backend integrations.
           </p>
-
-          {/* <p className="text-base text-muted-foreground max-w-2xl mb-10">
-            Currently leading a Kotlin Multiplatform + Ktor BFF architecture at a global fintech.
-          </p> */}
 
           <div className="flex flex-wrap gap-3 mb-12">
             <Button size="lg" className="gap-2 group" asChild>

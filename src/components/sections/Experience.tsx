@@ -3,9 +3,9 @@ import { SectionHeader } from "../SectionHeader";
 const experience = [
   {
     role: "Senior Mobile Platform Engineer",
-    company: "Revolut",
-    period: "2022 — Present",
-    location: "Remote",
+    company: "Hishabee Technologies Limited",
+    period: "2023,July — Present",
+    location: "Panthapath, Dhaka",
     achievements: [
       "Lead architect for the Android app (8M+ MAU) — migrated legacy Java modules to Jetpack Compose + Coroutines, reducing cold start by 41%.",
       "Built a shared Kotlin Multiplatform networking + persistence layer powering both Android and iOS, eliminating 18k LOC of duplication.",
@@ -14,9 +14,9 @@ const experience = [
   },
   {
     role: "Senior iOS / Backend Engineer",
-    company: "Bolt",
+    company: "Red Dot Digital (Contractually)",
     period: "2019 — 2022",
-    location: "Tallinn, Estonia",
+    location: "Gulshan, Dhaka",
     achievements: [
       "Owned the driver iOS app (SwiftUI + Combine) and its Ktor backend, shipping a real-time location pipeline on Kafka.",
       "Improved crash-free sessions from 99.2% → 99.94% via a structured-concurrency refactor.",
@@ -25,9 +25,9 @@ const experience = [
   },
   {
     role: "Android Engineer",
-    company: "N26",
+    company: "SOFTIC",
     period: "2016 — 2019",
-    location: "Berlin, Germany",
+    location: "Banglamotor, Dhaka",
     achievements: [
       "Built the biometric onboarding flow used by 4M+ customers; led the migration to a single-activity Compose architecture.",
       "Implemented offline-first transaction sync with Room + WorkManager, reducing API load by 38%.",
@@ -35,9 +35,9 @@ const experience = [
   },
   {
     role: "Mobile & Full Stack Engineer",
-    company: "Early-stage startups",
+    company: "Easy Payment System",
     period: "2014 — 2016",
-    location: "Berlin / Remote",
+    location: "Uttara, Dhaka",
     achievements: [
       "Shipped MVPs across fintech and healthtech — Android first, iOS soon after, Kotlin on the backend.",
       "Learned the hard lessons: instrumentation isn't optional, and migrations live forever.",
@@ -46,9 +46,9 @@ const experience = [
 ];
 
 export const Experience = () => (
-  <section id="experience" className="py-28 md:py-36">
+  <section id="experience" className="py-28 md:py-8">
     <div className="container">
-      <SectionHeader eyebrow="Experience" title="A decade of shipping mobile." />
+      <SectionHeader  title="Experience" />
       <div className="relative max-w-4xl">
         <div className="absolute left-0 md:left-[180px] top-2 bottom-2 w-px bg-border" />
         <div className="space-y-14">

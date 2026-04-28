@@ -29,11 +29,10 @@ const principles = [
 ];
 
 export const Architecture = () => (
-  <section className="py-28 md:py-36">
+  <section className="py-28 md:py-8">
     <div className="container">
       <SectionHeader
-        eyebrow="System design"
-        title="How I think about mobile + Ktor."
+        title="System design principles "
         description="The patterns I lean on when designing apps and the Ktor services behind them."
       />
       <div className="grid md:grid-cols-2 gap-6">

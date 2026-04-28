@@ -20,10 +20,10 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-28 md:py-36">
+    <section id="contact" className="py-20 md:py-28">
       <div className="container">
         <SectionHeader
-          eyebrow="Contact"
+        
           title="Let's build something."
           description="Open to senior engineering roles, technical advising, and interesting distributed-systems problems."
         />

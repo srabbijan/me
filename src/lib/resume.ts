@@ -100,5 +100,5 @@ export const generateResumePDF = () => {
   h2("Education");
   p("BSc Computer Science — TU Munich, 2014");
 
-  doc.save("Alex-Chen-Resume.pdf");
+  doc.save("Md-Fazle-Rabbi-Resume.pdf");
 };

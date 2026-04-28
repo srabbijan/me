@@ -34,12 +34,11 @@ const projects = [
 ];
 
 export const Projects = () => (
-  <section id="projects" className="py-28 md:py-36 bg-surface/50 border-y border-border">
+  <section id="projects" className="py-28 md:py-8 bg-surface/50 border-y border-border">
     <div className="container">
       <SectionHeader
-        eyebrow="Selected work"
-        title="Production apps, not demos."
-        description="A few mobile and Ktor systems I've built or led — real users, real on-call, real scale."
+        title="Selected work"
+        description="A few mobile and Ktor systems I've built."
       />
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((p) => (

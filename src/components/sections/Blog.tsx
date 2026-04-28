@@ -6,7 +6,7 @@ import { posts } from "@/data/posts";
 export const Blog = () => (
   <section className="py-28 md:py-36 bg-surface/50 border-y border-border">
     <div className="container">
-      <SectionHeader eyebrow="Writing" title="Engineering notes." description="Essays on mobile architecture, Ktor, and Kotlin Multiplatform." />
+      <SectionHeader title="Engineering notes." description="Essays on mobile architecture, Ktor, and Kotlin Multiplatform." />
       <div className="grid md:grid-cols-3 gap-6">
         {posts.map((post) => (
           <Link

@@ -3,7 +3,7 @@ import { SectionHeader } from "../SectionHeader";
 const skillGroups = [
   {
     category: "Android",
-    skills: ["Kotlin", "Jetpack Compose", "Coroutines", "Flow", "Hilt", "Room", "WorkManager", "Retrofit"],
+    skills: ["Kotlin","Java", "Jetpack Compose","XML", "Coroutines", "Flow", "Hilt", "Room", "WorkManager", "Retrofit", "Ktor"],
   },
   {
     category: "iOS",
@@ -11,28 +11,27 @@ const skillGroups = [
   },
   {
     category: "Ktor / Backend",
-    skills: ["Ktor", "Kotlin", "Coroutines", "Exposed", "Koin", "kotlinx.serialization", "WebSockets", "gRPC"],
+    skills: ["Ktor", "Kotlin", "Coroutines", "Exposed", "Koin", "kotlinx.serialization"],
   },
   {
     category: "Kotlin Multiplatform",
-    skills: ["KMP", "Compose Multiplatform", "SQLDelight", "Ktor Client", "Kermit", "Touchlab tooling"],
+    skills: ["KMP", "Compose Multiplatform", "SQLDelight", "Ktor Client", "Kermit"],
   },
   {
     category: "Data & Infra",
-    skills: ["PostgreSQL", "Redis", "Kafka", "Firebase", "S3", "OpenTelemetry"],
+    skills: ["PostgreSQL", "Redis", "Kafka", "Firebase", "S3"],
   },
   {
     category: "DevOps & Release",
-    skills: ["Docker", "Kubernetes", "GitHub Actions", "Fastlane", "Gradle", "Play Console", "App Store Connect"],
+    skills: [ "Play Console", "App Store Connect",  "Gradle", "Docker", "Kubernetes", "GitHub Actions"],
   },
 ];
 
 export const Skills = () => (
-  <section id="skills" className="py-28 md:py-36 bg-surface/50 border-y border-border">
+  <section id="skills" className="py-16 md:py-8 bg-surface/50 border-y border-border">
     <div className="container">
       <SectionHeader
-        eyebrow="Stack"
-        title="Tools I reach for."
+        title="Skills and tools I use daily."
         description="Kotlin-first across mobile and backend, Swift on the iOS side. Pragmatic about everything else."
       />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">

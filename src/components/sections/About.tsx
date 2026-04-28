@@ -1,6 +1,5 @@
 import { SectionHeader } from "../SectionHeader";
 import { Smartphone, Server, Layers, Workflow } from "lucide-react";
-import { Architecture } from "./Architecture";
 
 const pillars = [
   { icon: Smartphone, title: "Native Android", desc: "Android (Kotlin, Compose) — MVVM, Clean Architecture, Coroutines, Flow, Compose." },
@@ -10,9 +9,9 @@ const pillars = [
 ];
 
 export const About = () => (
-  <section id="about" className="py-28 md:py-36">
+  <section id="about" className="pt-16 md:pt-8 pb-20 md:pb-24">
     <div className="container">
-      <SectionHeader eyebrow="About" title="Mobile-first, full-stack." />
+      <SectionHeader title="About Me" />
       <div className="grid lg:grid-cols-2 gap-16">
         <div className="space-y-5 text-lg text-muted-foreground leading-relaxed">
           <p>With over 6 years of experience building mission-critical mobile applications, I focus on clean architecture, performance optimization, and scalable system thinking.          </p>

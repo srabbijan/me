@@ -46,12 +46,12 @@ const Role = ({
 
 const CVPage = () => (
   <PageLayout>
-    <article className="py-20 md:py-28">
+    <article className="py-20 md:py-8">
       <div className="container max-w-4xl">
         <header className="mb-14 pb-10 border-b border-border">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-6">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-2">Alex Chen</h1>
+              <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-2">Md Fazle Rabbi</h1>
               <p className="text-lg text-muted-foreground">
                 Senior Mobile & Backend Engineer · Android · iOS · Ktor
               </p>
@@ -61,16 +61,16 @@ const CVPage = () => (
             </Button>
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
-            <a href="mailto:alex@example.com" className="inline-flex items-center gap-2 hover:text-foreground"><Mail className="h-4 w-4" /> alex@example.com</a>
-            <a href="https://github.com" className="inline-flex items-center gap-2 hover:text-foreground"><Github className="h-4 w-4" /> github.com/alexchen</a>
-            <a href="https://linkedin.com" className="inline-flex items-center gap-2 hover:text-foreground"><Linkedin className="h-4 w-4" /> linkedin.com/in/alexchen</a>
-            <span className="inline-flex items-center gap-2"><MapPin className="h-4 w-4" /> Berlin, Germany</span>
+            <a href="mailto:srabbijan@gmail.com" className="inline-flex items-center gap-2 hover:text-foreground"><Mail className="h-4 w-4" /> srabbijan@gmail.com</a>
+            <a href="https://github.com/srabbijan" className="inline-flex items-center gap-2 hover:text-foreground"><Github className="h-4 w-4" /> github.com/srabbijan</a>
+            <a href="https://linkedin.com/in/srabbijan" className="inline-flex items-center gap-2 hover:text-foreground"><Linkedin className="h-4 w-4" /> linkedin.com/in/srabbijan</a>
+            <span className="inline-flex items-center gap-2"><MapPin className="h-4 w-4" /> KathalBagan Bazar, Dhaka</span>
           </div>
         </header>
 
         <Section title="Summary">
           <p className="text-muted-foreground leading-relaxed">
-            Senior full-stack mobile engineer with 10+ years building production Android (Kotlin/Compose), iOS (Swift/SwiftUI),
+            Senior full-stack mobile engineer with 6+ years building production Android (Kotlin/Compose), iOS (Swift/SwiftUI),
             and Ktor backend services. Specialized in offline-first architecture, Kotlin Multiplatform shared modules, and
             high-throughput JVM APIs serving millions of mobile clients.
           </p>
@@ -80,15 +80,15 @@ const CVPage = () => (
           <div className="grid sm:grid-cols-3 gap-6 text-sm">
             <div>
               <div className="font-semibold mb-2">Mobile</div>
-              <p className="text-muted-foreground leading-relaxed">Kotlin · Jetpack Compose · Coroutines · KMP · Swift · SwiftUI · Combine</p>
+              <p className="text-muted-foreground leading-relaxed">Kotlin · Jetpack Compose · Coroutines · KMP · Swift · SwiftUI </p>
             </div>
             <div>
               <div className="font-semibold mb-2">Backend</div>
-              <p className="text-muted-foreground leading-relaxed">Ktor · Kotlin · Exposed · PostgreSQL · Redis · gRPC · GraphQL</p>
+              <p className="text-muted-foreground leading-relaxed">Ktor · Kotlin · Exposed · PostgreSQL · Redis</p>
             </div>
             <div>
               <div className="font-semibold mb-2">Infra</div>
-              <p className="text-muted-foreground leading-relaxed">Docker · Kubernetes · GitHub Actions · AWS · Grafana · OpenTelemetry</p>
+              <p className="text-muted-foreground leading-relaxed">Docker · Kubernetes · GitHub Actions · AWS · Grafana</p>
             </div>
           </div>
         </Section>
@@ -147,10 +147,30 @@ const CVPage = () => (
         <Section title="Education">
           <Role
             role="BSc Computer Science"
-            company="TU Munich"
-            period="2010 — 2014"
-            location="Munich, Germany"
-            bullets={[]}
+            company="GSTU"
+            period="2020"
+            location="Goplagonj, Bangladesh"
+            bullets={[
+            "CGPA : 3.69 (First Position) out of 4.0",
+            ]}
+          />
+          <Role
+            role="HSC Science"
+            company="Rajshahi City College"
+            period="2016"
+            location="Rajshahi, Bangladesh"
+            bullets={[
+            "GPA : 5.00 out of 5.0",
+            ]}
+          />
+          <Role
+            role="SSC Science"
+            company="Barogharia High School"
+            period="2014"
+            location="Natore, Bangladesh"
+            bullets={[
+            "GPA : 5.00 (Golden) out of 5.0",
+            ]}
           />
         </Section>
       </div>
