@@ -3,33 +3,33 @@ import { SectionHeader } from "../SectionHeader";
 
 const projects = [
   {
-    title: "Orbit — Distributed Payments Engine",
-    description: "Multi-region, eventually consistent payments orchestration platform with pluggable rails and idempotent retry semantics.",
-    stack: ["Go", "PostgreSQL", "Kafka", "Kubernetes", "Terraform"],
-    challenges: "Achieving exactly-once semantics across 4 regions with cross-region failover under 30s.",
-    impact: "Processes $2B+ annually · p99 < 80ms · 99.995% uptime",
+    title: "Halo — Offline-first KMP Banking SDK",
+    description: "Kotlin Multiplatform module shared across Android, iOS, and a Ktor server. Handles auth, sync, and encrypted local storage with a single source of truth.",
+    stack: ["Kotlin", "KMP", "SQLDelight", "Ktor Client", "Swift Interop"],
+    challenges: "Achieving 95% code reuse while keeping platform-idiomatic APIs for SwiftUI and Compose.",
+    impact: "1 codebase · Android + iOS + JVM · 95% shared",
     featured: true,
   },
   {
-    title: "Pulse — Real-time Analytics Platform",
-    description: "Event ingestion and OLAP query engine for product telemetry, handling 500K events/sec with sub-second dashboards.",
-    stack: ["Rust", "ClickHouse", "Kafka", "React", "TypeScript"],
-    challenges: "Sharding strategy for high-cardinality time-series data with 30-day retention at petabyte scale.",
-    impact: "500K events/sec · 50ms query latency · 3 PB under management",
+    title: "Pulse — Ktor Real-time Backend",
+    description: "Ktor service with WebSocket fan-out for 500K concurrent mobile clients, backed by Redis pub/sub and a Postgres event log.",
+    stack: ["Ktor", "Coroutines", "Redis", "PostgreSQL", "Kubernetes"],
+    challenges: "Backpressure and reconnect storms on flaky mobile networks.",
+    impact: "500K concurrent · p99 < 90ms · 99.99% uptime",
   },
   {
-    title: "Kontext — AI Code Review Bot",
-    description: "GitHub App that uses LLMs + static analysis to deliver context-aware code reviews with cited references.",
-    stack: ["Next.js", "OpenAI", "tRPC", "Postgres", "Vercel"],
-    challenges: "Keeping LLM costs predictable while preserving review quality across polyglot codebases.",
-    impact: "12K+ repos · 80% reviewer acceptance rate",
+    title: "Compass — SwiftUI Driver App",
+    description: "iOS driver app with offline-capable navigation, background location, and a Combine-based reactive state pipeline.",
+    stack: ["Swift", "SwiftUI", "Combine", "Core Data", "MapKit"],
+    challenges: "Sustained background tracking under iOS energy budgets without battery regressions.",
+    impact: "Crash-free sessions: 99.2% → 99.94%",
   },
   {
-    title: "Mesh — Internal Developer Platform",
-    description: "Self-service infrastructure platform with golden paths for service creation, deployment, and observability.",
-    stack: ["Kotlin", "Kubernetes", "ArgoCD", "Backstage"],
-    challenges: "Balancing developer autonomy with safe defaults and org-wide compliance.",
-    impact: "Service bootstrap: 2 weeks → 15 minutes across 80+ engineers",
+    title: "Forge — Compose Design System",
+    description: "Internal Jetpack Compose design system with tokens, motion specs, and a Storybook-style preview gallery.",
+    stack: ["Kotlin", "Compose", "Material 3", "Paparazzi"],
+    challenges: "Driving adoption across 6 product squads while supporting legacy XML screens.",
+    impact: "Adopted by 80+ Android engineers across 12 apps",
   },
 ];
 
@@ -38,8 +38,8 @@ export const Projects = () => (
     <div className="container">
       <SectionHeader
         eyebrow="Selected work"
-        title="Production systems, not demos."
-        description="A look at a few things I've built or led. Real users, real on-call, real scale."
+        title="Production apps, not demos."
+        description="A few mobile and Ktor systems I've built or led — real users, real on-call, real scale."
       />
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((p) => (

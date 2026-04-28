@@ -1,9 +1,11 @@
 import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "../ui/button";
+import { Link } from "react-router-dom";
+import { generateResumePDF } from "@/lib/resume";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section className="relative min-h-[calc(100vh-4rem)] flex items-center pt-12 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-hero pointer-events-none" />
       <div className="absolute inset-0 bg-grid opacity-30 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_70%)] pointer-events-none" />
 
@@ -14,35 +16,33 @@ export const Hero = () => {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
             </span>
-            <span className="text-muted-foreground">Available for senior engineering roles</span>
+            <span className="text-muted-foreground">Open to senior mobile & Ktor backend roles</span>
           </div>
 
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-6">
-            <span className="text-gradient">Building systems</span>
+            <span className="text-gradient">Android, iOS</span>
             <br />
-            <span className="text-foreground">that scale.</span>
+            <span className="text-foreground">& Ktor backends.</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-4 leading-relaxed">
-            I'm <span className="text-foreground font-medium">Alex Chen</span>, a Senior Software Engineer with 10+ years designing distributed systems, cloud infrastructure, and production platforms serving millions of users.
+            I'm <span className="text-foreground font-medium">Alex Chen</span>, a Senior Mobile & Backend Engineer with 10+ years shipping production Android (Kotlin/Compose), iOS (Swift/SwiftUI), and Ktor services powering apps used by millions.
           </p>
 
           <p className="text-base text-muted-foreground max-w-2xl mb-10">
-            Currently architecting payment infrastructure at a Fortune 500 fintech.
+            Currently leading a Kotlin Multiplatform + Ktor BFF architecture at a global fintech.
           </p>
 
           <div className="flex flex-wrap gap-3 mb-12">
             <Button size="lg" className="gap-2 group" asChild>
-              <a href="#projects">
+              <Link to="/projects">
                 View Projects
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
             </Button>
-            <Button size="lg" variant="outline" className="gap-2" asChild>
-              <a href="#" download>
-                <Download className="h-4 w-4" />
-                Download Resume
-              </a>
+            <Button size="lg" variant="outline" className="gap-2" onClick={generateResumePDF}>
+              <Download className="h-4 w-4" />
+              Download Resume
             </Button>
           </div>
 
@@ -61,10 +61,10 @@ export const Hero = () => {
 
         <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl">
           {[
-            { value: "10+", label: "Years experience" },
-            { value: "50M+", label: "Users served" },
-            { value: "99.99%", label: "Uptime delivered" },
-            { value: "$2B+", label: "Transactions scaled" },
+            { value: "10+", label: "Years mobile + backend" },
+            { value: "20M+", label: "App installs shipped" },
+            { value: "99.95%", label: "Crash-free sessions" },
+            { value: "220M", label: "Ktor req/day served" },
           ].map((stat) => (
             <div key={stat.label}>
               <div className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">{stat.value}</div>

@@ -2,28 +2,28 @@ import { SectionHeader } from "../SectionHeader";
 
 const skillGroups = [
   {
-    category: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux", "React Query", "Vite"],
+    category: "Android",
+    skills: ["Kotlin", "Jetpack Compose", "Coroutines", "Flow", "Hilt", "Room", "WorkManager", "Retrofit"],
   },
   {
-    category: "Backend",
-    skills: ["Node.js", "Go", "Java / Spring", ".NET Core", "GraphQL", "gRPC", "REST APIs"],
+    category: "iOS",
+    skills: ["Swift", "SwiftUI", "Combine", "async/await", "Core Data", "XCTest", "SwiftPM"],
   },
   {
-    category: "Mobile",
-    skills: ["Kotlin / KMP", "Swift", "React Native", "Android SDK"],
+    category: "Ktor / Backend",
+    skills: ["Ktor", "Kotlin", "Coroutines", "Exposed", "Koin", "kotlinx.serialization", "WebSockets", "gRPC"],
+  },
+  {
+    category: "Kotlin Multiplatform",
+    skills: ["KMP", "Compose Multiplatform", "SQLDelight", "Ktor Client", "Kermit", "Touchlab tooling"],
   },
   {
     category: "Data & Infra",
-    skills: ["PostgreSQL", "Redis", "Kafka", "Elasticsearch", "DynamoDB", "ClickHouse"],
+    skills: ["PostgreSQL", "Redis", "Kafka", "Firebase", "S3", "OpenTelemetry"],
   },
   {
-    category: "Cloud",
-    skills: ["AWS", "GCP", "Azure", "Cloudflare", "Terraform", "Pulumi"],
-  },
-  {
-    category: "DevOps",
-    skills: ["Kubernetes", "Docker", "GitHub Actions", "ArgoCD", "Prometheus", "Grafana"],
+    category: "DevOps & Release",
+    skills: ["Docker", "Kubernetes", "GitHub Actions", "Fastlane", "Gradle", "Play Console", "App Store Connect"],
   },
 ];
 
@@ -33,7 +33,7 @@ export const Skills = () => (
       <SectionHeader
         eyebrow="Stack"
         title="Tools I reach for."
-        description="Polyglot by necessity, pragmatic by choice. I pick the right tool for the job — not the newest one on Hacker News."
+        description="Kotlin-first across mobile and backend, Swift on the iOS side. Pragmatic about everything else."
       />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
         {skillGroups.map((group) => (
