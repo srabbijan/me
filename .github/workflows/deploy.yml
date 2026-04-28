@@ -32,7 +32,7 @@ jobs:
 
       - name: Build
         env:
-          VITE_BASE_PATH: /me/
+          VITE_BASE_PATH: /
           VITE_API_BASE_URL: ${{ vars.VITE_API_BASE_URL }}
         run: npm run build
 
