@@ -16,22 +16,22 @@ export const Hero = () => {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
             </span>
-            <span className="text-muted-foreground">Open to senior mobile & Ktor backend roles</span>
+            <span className="text-muted-foreground">Available for Senior Roles</span>
           </div>
 
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-6">
-            <span className="text-gradient">Android, iOS</span>
+            <span className="text-gradient">Android, iOS, Flutter</span>
             <br />
             <span className="text-foreground">& Ktor backends.</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-4 leading-relaxed">
-            I'm <span className="text-foreground font-medium">Alex Chen</span>, a Senior Mobile & Backend Engineer with 10+ years shipping production Android (Kotlin/Compose), iOS (Swift/SwiftUI), and Ktor services powering apps used by millions.
+            I'm <span className="text-foreground font-medium">Md Fazle Rabbi</span>, a Senior Mobile & Backend Engineer with 6+ years shipping production Android (Kotlin/Compose), iOS (Swift/SwiftUI), Flutter(dart) and Ktor services powering apps used by millions.
           </p>
 
-          <p className="text-base text-muted-foreground max-w-2xl mb-10">
+          {/* <p className="text-base text-muted-foreground max-w-2xl mb-10">
             Currently leading a Kotlin Multiplatform + Ktor BFF architecture at a global fintech.
-          </p>
+          </p> */}
 
           <div className="flex flex-wrap gap-3 mb-12">
             <Button size="lg" className="gap-2 group" asChild>
@@ -47,13 +47,13 @@ export const Hero = () => {
           </div>
 
           <div className="flex items-center gap-5 text-muted-foreground">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors" aria-label="GitHub">
+            <a href="https://github.com/srabbijan" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors" aria-label="GitHub">
               <Github className="h-5 w-5" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors" aria-label="LinkedIn">
+            <a href="https://linkedin.com/in/srabbijan" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors" aria-label="LinkedIn">
               <Linkedin className="h-5 w-5" />
             </a>
-            <a href="mailto:alex@example.com" className="hover:text-foreground transition-colors" aria-label="Email">
+            <a href="mailto:srabbijan@gmail.com" className="hover:text-foreground transition-colors" aria-label="Email">
               <Mail className="h-5 w-5" />
             </a>
           </div>
@@ -61,10 +61,10 @@ export const Hero = () => {
 
         <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl">
           {[
-            { value: "10+", label: "Years mobile + backend" },
-            { value: "20M+", label: "App installs shipped" },
+            { value: "6+", label: "Years mobile + backend" },
+            { value: "1M+", label: "App installs shipped" },
             { value: "99.95%", label: "Crash-free sessions" },
-            { value: "220M", label: "Ktor req/day served" },
+            { value: "1M", label: "Ktor req/day served" },
           ].map((stat) => (
             <div key={stat.label}>
               <div className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">{stat.value}</div>
