@@ -2,45 +2,45 @@ import { SectionHeader } from "../SectionHeader";
 
 const experience = [
   {
-    role: "Senior Staff Software Engineer",
-    company: "Stripe",
+    role: "Senior Mobile Platform Engineer",
+    company: "Revolut",
     period: "2022 — Present",
     location: "Remote",
     achievements: [
-      "Lead architect for a global payments orchestration platform processing $2B+ in annual transactions across 40+ countries.",
-      "Reduced p99 API latency by 63% through a multi-region caching layer and query optimization.",
-      "Mentor 8 engineers across 3 teams; run weekly system design reviews.",
+      "Lead architect for the Android app (8M+ MAU) — migrated legacy Java modules to Jetpack Compose + Coroutines, reducing cold start by 41%.",
+      "Built a shared Kotlin Multiplatform networking + persistence layer powering both Android and iOS, eliminating 18k LOC of duplication.",
+      "Designed a Ktor-based BFF service handling 220M req/day with p99 < 90ms.",
     ],
   },
   {
-    role: "Senior Software Engineer",
-    company: "Airbnb",
+    role: "Senior iOS / Backend Engineer",
+    company: "Bolt",
     period: "2019 — 2022",
-    location: "San Francisco, CA",
+    location: "Tallinn, Estonia",
     achievements: [
-      "Owned the pricing intelligence service (Kotlin / Kafka) serving 150M+ requests daily with 99.99% uptime.",
-      "Migrated legacy monolith to event-driven microservices, cutting deploy time from 45min to 4min.",
-      "Tech lead for a 6-person team shipping host onboarding redesign used by 4M+ hosts.",
+      "Owned the driver iOS app (SwiftUI + Combine) and its Ktor backend, shipping a real-time location pipeline on Kafka.",
+      "Improved crash-free sessions from 99.2% → 99.94% via a structured-concurrency refactor.",
+      "Tech lead for a 5-person mobile team across Android and iOS surfaces.",
     ],
   },
   {
-    role: "Software Engineer",
-    company: "Uber",
+    role: "Android Engineer",
+    company: "N26",
     period: "2016 — 2019",
-    location: "San Francisco, CA",
+    location: "Berlin, Germany",
     achievements: [
-      "Built real-time dispatch matching service in Go, improving trip ETA accuracy by 22%.",
-      "Designed the driver earnings pipeline on Kafka + Flink processing 20M events/hour.",
+      "Built the biometric onboarding flow used by 4M+ customers; led the migration to a single-activity Compose architecture.",
+      "Implemented offline-first transaction sync with Room + WorkManager, reducing API load by 38%.",
     ],
   },
   {
-    role: "Full Stack Engineer",
+    role: "Mobile & Full Stack Engineer",
     company: "Early-stage startups",
     period: "2014 — 2016",
-    location: "New York, NY",
+    location: "Berlin / Remote",
     achievements: [
-      "Shipped MVPs across fintech and healthtech, from schema to production deployment.",
-      "Learned the hard lessons: observability isn't optional, and migrations are forever.",
+      "Shipped MVPs across fintech and healthtech — Android first, iOS soon after, Kotlin on the backend.",
+      "Learned the hard lessons: instrumentation isn't optional, and migrations live forever.",
     ],
   },
 ];
@@ -48,7 +48,7 @@ const experience = [
 export const Experience = () => (
   <section id="experience" className="py-28 md:py-36">
     <div className="container">
-      <SectionHeader eyebrow="Experience" title="A decade of shipping." />
+      <SectionHeader eyebrow="Experience" title="A decade of shipping mobile." />
       <div className="relative max-w-4xl">
         <div className="absolute left-0 md:left-[180px] top-2 bottom-2 w-px bg-border" />
         <div className="space-y-14">

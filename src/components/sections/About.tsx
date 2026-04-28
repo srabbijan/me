@@ -1,27 +1,27 @@
 import { SectionHeader } from "../SectionHeader";
-import { Code2, Cloud, GitBranch, Users } from "lucide-react";
+import { Smartphone, Server, Layers, Users } from "lucide-react";
 
 const pillars = [
-  { icon: Code2, title: "System Design", desc: "Architecting distributed systems that handle millions of requests with sub-50ms latency." },
-  { icon: Cloud, title: "Cloud Native", desc: "Deep expertise in AWS, Kubernetes, and event-driven architectures at scale." },
-  { icon: GitBranch, title: "Engineering Excellence", desc: "Championing code quality, observability, and zero-downtime deployments." },
-  { icon: Users, title: "Technical Leadership", desc: "Mentoring engineers, running design reviews, and shaping product direction." },
+  { icon: Smartphone, title: "Native Mobile", desc: "Production Android (Kotlin, Compose) and iOS (Swift, SwiftUI) — offline-first, type-safe, testable." },
+  { icon: Server, title: "Ktor Backends", desc: "High-throughput JVM services with Ktor, Coroutines, and Exposed. p99 latencies under 100ms at scale." },
+  { icon: Layers, title: "Kotlin Multiplatform", desc: "Sharing networking, persistence, and domain logic across Android, iOS, and JVM with KMP." },
+  { icon: Users, title: "Mobile Leadership", desc: "Mentoring mobile teams, driving release-train discipline, and owning the on-call rotation." },
 ];
 
 export const About = () => (
   <section id="about" className="py-28 md:py-36">
     <div className="container">
-      <SectionHeader eyebrow="About" title="Engineering with intent." />
+      <SectionHeader eyebrow="About" title="Mobile-first, full-stack." />
       <div className="grid lg:grid-cols-2 gap-16">
         <div className="space-y-5 text-lg text-muted-foreground leading-relaxed">
           <p>
-            I've spent the last decade building software that matters — from real-time trading platforms processing billions in transactions, to consumer apps serving tens of millions of daily users.
+            I've spent the last decade shipping mobile apps and the backends behind them — from real-time fintech to ride-hailing platforms used by tens of millions of riders and drivers daily.
           </p>
           <p>
-            My focus is on the unglamorous problems that define production systems: <span className="text-foreground">reliability, observability, and the subtle tradeoffs</span> between consistency, availability, and cost.
+            My focus is on the unglamorous problems of mobile engineering: <span className="text-foreground">cold-start performance, battery cost, flaky networks, and shared business logic</span> across Android and iOS.
           </p>
           <p>
-            I believe great engineering is less about new frameworks and more about understanding failure modes, data flow, and the humans operating the system at 3am.
+            On the server side I lean on Ktor and Coroutines — small, composable services that pair naturally with the mobile clients consuming them.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 gap-4">

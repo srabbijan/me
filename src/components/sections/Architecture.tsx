@@ -4,27 +4,27 @@ import { Layers, Database, Zap, Shield } from "lucide-react";
 const principles = [
   {
     icon: Layers,
-    title: "Service decomposition",
-    desc: "Right-size service boundaries around data ownership and change velocity — not org charts.",
-    tags: ["Microservices", "DDD", "Event sourcing"],
+    title: "Mobile architecture",
+    desc: "Unidirectional data flow, single-activity Compose, MVI on Android and TCA-style state on iOS. Boring, predictable, testable.",
+    tags: ["Compose", "SwiftUI", "MVI", "TCA"],
   },
   {
     icon: Database,
-    title: "Data & caching strategy",
-    desc: "Multi-tier caching (CDN → Redis → DB) with invalidation protocols and read-through semantics.",
-    tags: ["Redis", "CDN", "Read replicas"],
+    title: "Offline-first sync",
+    desc: "Local-first storage with conflict-free merge protocols over Ktor. The network is treated as an optimization, not a dependency.",
+    tags: ["Room", "SQLDelight", "Core Data", "WorkManager"],
   },
   {
     icon: Zap,
-    title: "Performance & scale",
-    desc: "Horizontal scaling, connection pooling, async pipelines. Measure first, optimize second.",
-    tags: ["Kafka", "Load shedding", "Backpressure"],
+    title: "Ktor at scale",
+    desc: "Coroutine-driven Ktor services with structured concurrency, connection pooling, and backpressure on the mobile-facing edges.",
+    tags: ["Ktor", "Coroutines", "Exposed", "WebSockets"],
   },
   {
     icon: Shield,
-    title: "Reliability & observability",
-    desc: "SLOs, error budgets, distributed tracing. If you can't see it in production, it doesn't exist.",
-    tags: ["OpenTelemetry", "SLOs", "Chaos eng"],
+    title: "Mobile reliability",
+    desc: "Crash-free SLOs, client-side tracing, and feature flags wired into release trains. Observability extends to the device.",
+    tags: ["OpenTelemetry", "Sentry", "Feature flags"],
   },
 ];
 
@@ -33,8 +33,8 @@ export const Architecture = () => (
     <div className="container">
       <SectionHeader
         eyebrow="System design"
-        title="How I think about scale."
-        description="The patterns and principles I lean on when designing systems that will outlive their first author."
+        title="How I think about mobile + Ktor."
+        description="The patterns I lean on when designing apps and the Ktor services behind them."
       />
       <div className="grid md:grid-cols-2 gap-6">
         {principles.map((p) => (
