@@ -1,5 +1,5 @@
 import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 export const Hero = () => {
   return (
