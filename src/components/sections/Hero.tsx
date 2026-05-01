@@ -59,7 +59,7 @@ export const Hero = () => {
           {[
             { value: "6+", label: "Years mobile + backend" },
             { value: "1M+", label: "App installs shipped" },
-            { value: "99.95%", label: "Crash-free sessions" },
+            { value: "99.99%", label: "Crash-free sessions" },
             { value: "1M", label: "Ktor req/day served" },
           ].map((stat) => (
             <div key={stat.label}>
