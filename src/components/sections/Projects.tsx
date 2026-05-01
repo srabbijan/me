@@ -3,33 +3,26 @@ import { SectionHeader } from "../SectionHeader";
 
 const projects = [
   {
-    title: "Halo — Offline-first KMP Banking SDK",
-    description: "Kotlin Multiplatform module shared across Android, iOS, and a Ktor server. Handles auth, sync, and encrypted local storage with a single source of truth.",
-    stack: ["Kotlin", "KMP", "SQLDelight", "Ktor Client", "Swift Interop"],
-    challenges: "Achieving 95% code reuse while keeping platform-idiomatic APIs for SwiftUI and Compose.",
-    impact: "1 codebase · Android + iOS + JVM · 95% shared",
+    title: "Offline-first Event Mapping SDK",
+    description: "Android library for event mapping and analytics. Features an offline-capable architecture with local batching and retry logic.",
+    stack: ["Kotlin", "Coroutines", "Room", "WorkManager"],
+    challenges: "Ensuring reliable event delivery under varying network conditions while minimizing battery impact.",
+    impact: "38% reduction in API load · 99.5% event delivery success rate",
     featured: true,
   },
   {
-    title: "Pulse — Ktor Real-time Backend",
-    description: "Ktor service with WebSocket fan-out for 500K concurrent mobile clients, backed by Redis pub/sub and a Postgres event log.",
-    stack: ["Ktor", "Coroutines", "Redis", "PostgreSQL", "Kubernetes"],
-    challenges: "Backpressure and reconnect storms on flaky mobile networks.",
-    impact: "500K concurrent · p99 < 90ms · 99.99% uptime",
+    title: "KMP DateTime Picker Library",
+    description: "A Kotlin Multiplatform library providing a consistent date and time picker UI across Android and iOS, with shared business logic and platform-specific UI implementations.",
+    stack: ["Kotlin Multiplatform", "Jetpack Compose"],
+    challenges: "Achieving 95% code reuse across platforms while adhering to native design guidelines and ensuring smooth performance.",
+    impact: "95% code reuse across Android and iOS · Adopted by 10+ production apps",
   },
   {
-    title: "Compass — SwiftUI Driver App",
-    description: "iOS driver app with offline-capable navigation, background location, and a Combine-based reactive state pipeline.",
-    stack: ["Swift", "SwiftUI", "Combine", "Core Data", "MapKit"],
-    challenges: "Sustained background tracking under iOS energy budgets without battery regressions.",
-    impact: "Crash-free sessions: 99.2% → 99.94%",
-  },
-  {
-    title: "Forge — Compose Design System",
-    description: "Internal Jetpack Compose design system with tokens, motion specs, and a Storybook-style preview gallery.",
-    stack: ["Kotlin", "Compose", "Material 3", "Paparazzi"],
-    challenges: "Driving adoption across 6 product squads while supporting legacy XML screens.",
-    impact: "Adopted by 80+ Android engineers across 12 apps",
+    title: "Due Book App",
+    description: "A personal project — a mobile app for tracking bills and subscriptions. Features include bill reminders, subscription management, and spending insights.",
+    stack: ["Kotlin", "Kotlin Multiplatform", "Ktor", "Exposed", "PostgreSQL"],
+    challenges: "Building a full-stack KMP app with a Ktor backend, implementing offline-first features, and ensuring data consistency across platforms.",
+    impact: "Built a full-stack KMP app with a Ktor backend · Implemented offline-first features with Room and WorkManager",
   },
 ];
 

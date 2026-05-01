@@ -71,7 +71,7 @@ const CVPage = () => (
         <Section title="Summary">
           <p className="text-muted-foreground leading-relaxed">
             Senior full-stack mobile engineer with 6+ years building production Android (Kotlin/Compose), iOS (Swift/SwiftUI),
-            and Ktor backend services. Specialized in offline-first architecture, Kotlin Multiplatform shared modules, and
+            Cross-platform (KMP,Flutter) and Ktor backend services. Specialized in offline-first architecture, Kotlin Multiplatform shared modules, and
             high-throughput JVM APIs serving millions of mobile clients.
           </p>
         </Section>
@@ -80,7 +80,7 @@ const CVPage = () => (
           <div className="grid sm:grid-cols-3 gap-6 text-sm">
             <div>
               <div className="font-semibold mb-2">Mobile</div>
-              <p className="text-muted-foreground leading-relaxed">Kotlin · Jetpack Compose · Coroutines · KMP · Swift · SwiftUI </p>
+              <p className="text-muted-foreground leading-relaxed">Kotlin · Jetpack Compose · Coroutines · KMP · Flutter · Swift · SwiftUI </p>
             </div>
             <div>
               <div className="font-semibold mb-2">Backend</div>
@@ -96,51 +96,70 @@ const CVPage = () => (
         <Section title="Experience">
           <Role
             role="Senior Mobile Platform Engineer"
-            company="Revolut"
-            period="2022 — Present"
-            location="Remote"
+            company="Hishabee Technologies Limited"
+            period="2023,July — Present"
+            location="Panthapath, Dhaka"
             bullets={[
-              "Lead architect for the Android app (8M+ MAU); migrated legacy modules to Compose + Coroutines, cutting cold start by 41%.",
-              "Built a shared KMP networking + persistence layer powering Android and iOS, removing 18k LOC of duplication.",
-              "Designed a Ktor-based BFF service handling 220M req/day with p99 < 90ms.",
+      "App Size Reduced by 50% and Crash Rate Reduced by 3% through performance optimizations and refactoring.",
+      "Improved crash-free sessions from 99.2% → 99.9% via a structured-concurrency refactor.",
+      "Mentored junior engineers and established best practices for code quality and testing.",
+      "Implemented a new onboarding flow that improved user retention by 20% and reduced drop-off rates by 25%.",
             ]}
           />
           <Role
-            role="Senior iOS / Backend Engineer"
-            company="Bolt"
-            period="2019 — 2022"
-            location="Tallinn, Estonia"
+            role="Mobile Application Development"
+            company="Red Dot Digital (Contractually)"
+            period="2023,January — 2023,June"
+            location="Gulshan, Dhaka"
             bullets={[
-              "Owned the driver iOS app (SwiftUI + Combine) and its Ktor backend; shipped a real-time location pipeline on Kafka.",
-              "Improved crash-free sessions from 99.2% to 99.94% via a structured-concurrency refactor.",
+             "Feature development and maintenance for a client, focusing on Android platforms.",
+      "Implemented offline-first transaction sync with Room + WorkManager, reducing API load by 38%.",
+      "Collaborated closely with cross-functional teams to deliver high-quality features on time.",
             ]}
           />
           <Role
-            role="Android Engineer"
-            company="N26"
-            period="2016 — 2019"
-            location="Berlin, Germany"
+            role="Flutter Developer"
+            company="SOFTIC"
+            period="2022,October — 2023,January"
+            location="Banglamotor, Dhaka"
             bullets={[
-              "Built the biometric onboarding flow used by 4M+ customers.",
-              "Implemented offline-first transaction sync with Room + WorkManager.",
+              "Developed and maintained cross-platform mobile applications using Flutter, ensuring a seamless user experience across both Android and iOS platforms.",
+      "Implemented state management solutions and optimized app performance, resulting in a 30% increase in user engagement and a 25% reduction in crash rates.",
+            ]}
+          />
+          <Role
+            role="Mid Level Android Developer"
+            company="Easy Payment System"
+            period="2021,February — 2022,September"
+            location="Uttara, Dhaka"
+            bullets={[
+              "Developed and maintained the Android application for a leading payment processing company, ensuring high performance and reliability.",
+      "Implemented new features and optimized existing ones, resulting in a 15% increase in user retention and a 20% reduction in crash rates.",
             ]}
           />
         </Section>
 
         <Section title="Selected Projects">
           <Role
-            role="Halo"
-            company="Offline-first KMP banking SDK"
+            role="SDK"
+            company="Offline-first Event Mapping SDK"
             period=""
             location=""
-            bullets={["Shared Kotlin module across Android, iOS, and JVM with 95% code reuse."]}
+            bullets={["Android library for event mapping and analytics. Features an offline-capable architecture with local batching and retry logic."]}
           />
           <Role
-            role="Pulse"
-            company="Ktor real-time analytics backend"
+            role="Library"
+            company="KMP DateTime Picker Library"
             period=""
             location=""
-            bullets={["WebSocket fan-out for 500K concurrent mobile clients with Redis pub/sub."]}
+            bullets={["A Kotlin Multiplatform library providing a consistent date and time picker UI across Android and iOS, with shared business logic and platform-specific UI implementations."]}
+          />
+          <Role
+            role="App"
+            company="Due Book"
+            period=""
+            location=""
+            bullets={["A personal project — a mobile app for tracking bills and subscriptions. Features include bill reminders, subscription management, and spending insights."]}
           />
         </Section>
 
